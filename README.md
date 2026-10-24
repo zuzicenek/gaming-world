@@ -1,25 +1,25 @@
 
 # Gaming World 🎮
 
-Responzivní webová stránka zaměřená na svět počítačových her, herních konzolí a herního vybavení.
+A responsive website dedicated to video games, gaming consoles, and gaming equipment.
 
-## O projektu
+## About the Project
 
-Gaming World je semestrální projekt vytvořený v rámci studia. Cílem projektu je vytvořit přehledný a responzivní web s herní tematikou, který funguje na počítačích, tabletech i mobilních telefonech.
+Gaming World is a student semester project created as part of university studies. The goal is to build a modern, user-friendly website that works on desktop computers, tablets, and mobile devices.
 
-## Funkce webu
+## Features
 
-- Úvodní stránka s obrázkovým carousel a představením webu
-- Stránka O projektu
-- Přehled her
-- Galerie herních obrázků
-- Novinky ze světa gamingu
-- Tabulka s herními daty
-- Kontaktní stránka s formulářem
-- Responzivní navigace a rozvržení
-- Bootstrap komponenty, záložky a modální okno
+- Homepage with an image carousel and introductory content
+- Project information page
+- Video games overview
+- Image gallery
+- Gaming news page
+- Data table with gaming-related information
+- Contact page with a form
+- Responsive navigation
+- Bootstrap components, tabs, and modal window
 
-## Použité technologie
+## Technologies Used
 
 - HTML5
 - CSS3
@@ -29,19 +29,19 @@ Gaming World je semestrální projekt vytvořený v rámci studia. Cílem projek
 - DataTables
 - Bootstrap Icons
 
-## Struktura projektu
+## Project Structure
 
-- `index.html` – úvodní stránka
-- `about.html` – informace o projektu
-- `games.html` – přehled her
-- `gallery.html` – galerie
-- `news.html` – novinky
-- `table.html` – tabulka s daty
-- `contact.html` – kontaktní stránka
-- `css/` – styly a CSS knihovny
-- `js/` – JavaScript a použité knihovny
-- `images/` – obrázky
-- `fonts/` – soubory ikon
+- `index.html` – homepage
+- `about.html` – about the project
+- `games.html` – games overview
+- `gallery.html` – image gallery
+- `news.html` – gaming news
+- `table.html` – data table
+- `contact.html` – contact page
+- `css/` – stylesheets and CSS libraries
+- `js/` – JavaScript files and libraries
+- `images/` – website images
+- `fonts/` – icon font files
 
 
-Studentský projekt – 2026.
+Student project – 2026.
