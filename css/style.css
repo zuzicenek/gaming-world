@@ -1,0 +1,601 @@
+
+/* =========================================
+   GAMING WORLD – VLASTNÍ DESIGN
+   ========================================= */
+
+:root {
+    --gw-bg: #11121a;
+    --gw-surface: #1b1d2b;
+    --gw-surface-light: #24273a;
+    --gw-text: #f2f3fa;
+    --gw-muted: #b7bbcf;
+    --gw-purple: #8b5cf6;
+    --gw-purple-hover: #a78bfa;
+    --gw-cyan: #22d3ee;
+    --gw-border: #35384e;
+}
+
+/* Základ stránky */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--gw-bg);
+    color: var(--gw-text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Navigace */
+
+.navbar {
+    background: #191a27 !important;
+    border-bottom: 1px solid var(--gw-border);
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-brand {
+    color: var(--gw-text) !important;
+    font-size: 1.45rem;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand i {
+    color: var(--gw-cyan);
+    margin-right: 6px;
+}
+
+.navbar .nav-link {
+    color: var(--gw-muted) !important;
+    padding: 9px 12px !important;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffffff !important;
+    background-color: #302447;
+}
+
+.navbar-toggler {
+    border-color: var(--gw-border);
+}
+
+/* Carousel */
+
+.carousel {
+    background-color: #090a10;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: clamp(260px, 38vw, 480px);
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.68);
+}
+
+.carousel-caption {
+    bottom: 12%;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption h2 {
+    font-size: clamp(1.5rem, 3vw, 2.8rem);
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1.05rem;
+}
+
+/* Obsah a nadpisy */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--gw-text);
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 750;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+p {
+    color: var(--gw-muted);
+}
+
+.lead {
+    color: #d2d5e5;
+    max-width: 850px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+    margin-bottom: 24px;
+}
+
+.breadcrumb-item,
+.breadcrumb-item.active {
+    color: var(--gw-muted);
+}
+
+.breadcrumb-item a {
+    color: var(--gw-cyan);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #777b95;
+}
+
+/* Karty */
+
+.card {
+    height: 100%;
+    color: var(--gw-text);
+    background-color: var(--gw-surface);
+    border: 1px solid var(--gw-border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s, border-color 0.2s,
+                box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gw-purple);
+    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.12);
+}
+
+.card-body {
+    padding: 26px;
+}
+
+.card-title {
+    color: var(--gw-text);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.card-title i {
+    color: var(--gw-cyan);
+    margin-right: 7px;
+}
+
+.card-text {
+    color: var(--gw-muted);
+}
+
+/* Všechna tlačítka */
+
+.btn {
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s,
+                border-color 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Primární tlačítko */
+
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--gw-purple);
+    border-color: var(--gw-purple);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #ffffff;
+    background-color: #7043d8;
+    border-color: #7043d8;
+}
+
+/* Zelená tlačítka sjednotíme s designem */
+
+.btn-success {
+    color: #ffffff;
+    background-color: #087f8c;
+    border-color: #087f8c;
+}
+
+.btn-success:hover {
+    color: #ffffff;
+    background-color: #066874;
+    border-color: #066874;
+}
+
+/* Žlutá tlačítka */
+
+.btn-warning {
+    color: #171421;
+    background-color: var(--gw-cyan);
+    border-color: var(--gw-cyan);
+}
+
+.btn-warning:hover {
+    color: #11121a;
+    background-color: #67e8f9;
+    border-color: #67e8f9;
+}
+
+/* Tmavá tlačítka */
+
+.btn-dark {
+    color: #ffffff;
+    background-color: var(--gw-surface-light);
+    border-color: var(--gw-border);
+}
+
+.btn-dark:hover {
+    color: #ffffff;
+    background-color: #343750;
+    border-color: var(--gw-purple);
+}
+
+/* Záložky */
+
+.gaming-tabs {
+    margin-top: 55px !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--gw-border);
+    gap: 5px;
+}
+
+.nav-tabs .nav-link {
+    color: var(--gw-muted);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 0 0;
+    padding: 12px 18px;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #ffffff;
+    background-color: var(--gw-surface);
+    border-color: var(--gw-border);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--gw-cyan);
+    background-color: var(--gw-surface);
+    border-color: var(--gw-border) var(--gw-border) var(--gw-surface);
+}
+
+.tab-content {
+    color: var(--gw-text);
+    background-color: var(--gw-surface) !important;
+    border-color: var(--gw-border) !important;
+    border-radius: 0 0 14px 14px;
+    padding: 30px !important;
+}
+
+.tab-content p {
+    max-width: 850px;
+}
+
+/* Modal */
+
+.modal-content {
+    color: var(--gw-text);
+    background-color: var(--gw-surface);
+    border: 1px solid var(--gw-border);
+    border-radius: 16px;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--gw-border);
+}
+
+.modal-title {
+    color: var(--gw-text);
+}
+
+.modal-body p,
+.modal-body li {
+    color: var(--gw-muted);
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Formuláře a tabulky pro další stránky */
+
+.form-control,
+.form-select {
+    color: var(--gw-text);
+    background-color: #151722;
+    border-color: var(--gw-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #ffffff;
+    background-color: #151722;
+    border-color: var(--gw-purple);
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.2);
+}
+
+.form-control::placeholder {
+    color: #9297ad;
+}
+
+.form-label,
+.form-check-label {
+    color: var(--gw-text);
+}
+
+/* Odkazy */
+
+a {
+    transition: color 0.2s;
+}
+
+/* Responzivní úpravy */
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        padding-top: 12px;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 12px !important;
+    }
+
+    .carousel-item img {
+        height: 260px;
+    }
+
+    .carousel-caption {
+        bottom: 6%;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 22px;
+    }
+
+    .gaming-tabs {
+        margin-top: 40px !important;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .tab-content {
+        padding: 20px !important;
+    }
+}
+
+/* Respektování nastavení omezení animací */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================
+   GAMING WORLD – DATATABLES DARK THEME
+   ========================================= */
+
+#gamesTable {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0;
+    color: #e8eaf6 !important;
+    background: #191c2b !important;
+    border: 1px solid #34384e;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#gamesTable thead th {
+    background: #292d43 !important;
+    color: #ffffff !important;
+    padding: 16px 14px;
+    border-bottom: 2px solid #8178ff !important;
+    border-top: none !important;
+    white-space: nowrap;
+}
+
+#gamesTable tbody tr > td {
+    background: #191c2b !important;
+    color: #e8eaf6 !important;
+    padding: 14px;
+    border-color: #34384e !important;
+    vertical-align: middle;
+}
+
+#gamesTable tbody tr:nth-child(even) > td {
+    background: #22263a !important;
+    color: #e8eaf6 !important;
+}
+
+#gamesTable tbody tr:hover > td {
+    background: #303654 !important;
+    color: #ffffff !important;
+}
+
+/* Vyhledávání a výběr počtu záznamů */
+.dt-container {
+    color: #cbd0e5 !important;
+}
+
+.dt-container .dt-search input,
+.dt-container .dt-length select {
+    background: #202437 !important;
+    color: #ffffff !important;
+    border: 1px solid #505674 !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+}
+
+.dt-container .dt-search input:focus,
+.dt-container .dt-length select:focus {
+    border-color: #8178ff !important;
+    box-shadow: 0 0 0 3px rgba(129, 120, 255, 0.2) !important;
+    outline: none;
+}
+
+.dt-container .dt-info {
+    color: #b9bfd5 !important;
+    padding-top: 16px !important;
+}
+
+/* Stránkování – DataTables 2 */
+.dt-container .dt-paging .dt-paging-button {
+    background: #202437 !important;
+    color: #e8eaf6 !important;
+    border: 1px solid #34384e !important;
+    border-radius: 7px !important;
+    margin: 0 3px !important;
+    padding: 8px 13px !important;
+}
+
+.dt-container .dt-paging .dt-paging-button:hover {
+    background: #393d5a !important;
+    color: #ffffff !important;
+    border-color: #8178ff !important;
+}
+
+.dt-container .dt-paging .dt-paging-button.current,
+.dt-container .dt-paging .dt-paging-button.current:hover {
+    background: #6c63ff !important;
+    color: #ffffff !important;
+    border-color: #6c63ff !important;
+    box-shadow: 0 3px 10px rgba(108, 99, 255, 0.25);
+}
+
+.dt-container .dt-paging .dt-paging-button.disabled {
+    background: #171a27 !important;
+    color: #70778f !important;
+    border-color: #292d40 !important;
+    cursor: not-allowed;
+}
+
+/* Responzivní zobrazení */
+@media (max-width: 576px) {
+    #gamesTable thead th,
+    #gamesTable tbody tr > td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .dt-container .dt-paging .dt-paging-button {
+        padding: 6px 9px !important;
+        margin: 2px !important;
+    }
+}
+
+/* ===== O PROJEKTU – VZHLED KARET ===== */
+
+#about-features .feature-list {
+    background: transparent;
+    border: 0;
+    gap: 12px;
+}
+
+#about-features .feature-list .list-group-item {
+    background: #292e43;
+    color: #edf0ff;
+    border: 1px solid #3b415a;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#about-features .feature-list .list-group-item:hover {
+    background: #343b55;
+    transform: translateX(4px);
+}
+
+#about-features .feature-list .list-group-item i {
+    color: #a9b8ff;
+    margin-right: 10px;
+}
+
+#about-features .about-card {
+    height: 100%;
+    padding: 28px;
+    background: #202437;
+    color: #edf0ff;
+    border: 1px solid #343a52;
+    border-radius: 20px;
+}
+
+#about-features .about-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 576px) {
+    #about-features .about-card {
+        padding: 20px;
+    }
+
+    #about-features .feature-list .list-group-item {
+        padding: 13px 14px;
+    }
+}

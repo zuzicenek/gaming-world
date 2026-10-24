@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galerie | Gaming World</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVIGACE -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-controller"></i> Gaming World
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">O projektu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">Hry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html"
+                       aria-current="page">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Novinky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">Tabulka</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HLAVNÍ OBSAH -->
+<main class="container py-5">
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Úvod</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Galerie
+            </li>
+        </ol>
+    </nav>
+
+    <div class="mb-4">
+        <h1><i class="bi bi-images"></i> Herní galerie</h1>
+        <p class="lead">
+            Prohlédni si herní prostředí, vybavení a inspiraci
+            pro vlastní herní koutek. Kliknutím na obrázek jej zvětšíš.
+        </p>
+    </div>
+
+    <!-- GALERIE -->
+    <div class="row g-4">
+
+        <!-- 1. Herní akce -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-event.jpg"
+                    data-title="Herní akce">
+
+                <img src="images/gaming-event.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní akce"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní akce</span>
+            </button>
+        </div>
+
+        <!-- 2. Herní konzole -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-console.jpg"
+                    data-title="Herní konzole">
+
+                <img src="images/gaming-console.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní konzole"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní konzole</span>
+            </button>
+        </div>
+
+        <!-- 3. Herní sestava -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-setup.jpg"
+                    data-title="Herní sestava">
+
+                <img src="images/gaming-setup.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní sestava"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní sestava</span>
+            </button>
+        </div>
+
+        <!-- 4. Herní vybavení -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-equipment.jpg"
+                    data-title="Herní vybavení">
+
+                <img src="images/gaming-equipment.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní vybavení"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní vybavení</span>
+            </button>
+        </div>
+
+        <!-- 5. Herní ovladač -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-controller.jpg"
+                    data-title="Herní ovladač">
+
+                <img src="images/gaming-controller.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní ovladač"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní ovladač</span>
+            </button>
+        </div>
+
+        <!-- 6. Herní sluchátka -->
+        <div class="col-sm-6 col-lg-4">
+            <button type="button"
+                    class="btn p-0 w-100 text-start gallery-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image="images/gaming-headset.jpg"
+                    data-title="Herní sluchátka">
+
+                <img src="images/gaming-headset.jpg"
+                     class="img-fluid rounded-4 w-100"
+                     alt="Herní sluchátka"
+                     loading="lazy"
+                     style="height: 240px; object-fit: cover;">
+
+                <span class="d-block mt-2 fw-semibold">Herní sluchátka</span>
+            </button>
+        </div>
+
+    </div>
+</main>
+
+<!-- MODÁLNÍ OKNO -->
+<div class="modal fade"
+     id="imageModal"
+     tabindex="-1"
+     aria-labelledby="imageModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="imageModalLabel">
+                    Herní galerie
+                </h2>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Zavřít">
+                </button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img id="modalImage"
+                     src=""
+                     alt=""
+                     class="img-fluid rounded-3">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- PATIČKA -->
+<footer class="text-center py-4 mt-4">
+    <p class="mb-0">© 2026 Gaming World | Studentský projekt</p>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- JavaScript pro zvětšování obrázků -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const imageModal = document.getElementById("imageModal");
+
+    if (!imageModal) {
+        console.error("Modální okno #imageModal nebylo nalezeno.");
+        return;
+    }
+
+    imageModal.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+
+        if (!button) return;
+
+        const image = button.getAttribute("data-image");
+        const title = button.getAttribute("data-title") || "Herní galerie";
+
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("imageModalLabel");
+
+        modalImage.src = image;
+        modalImage.alt = title;
+        modalTitle.textContent = title;
+    });
+
+    imageModal.addEventListener("hidden.bs.modal", function () {
+        const modalImage = document.getElementById("modalImage");
+        modalImage.src = "";
+        modalImage.alt = "";
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novinky | Gaming World</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVIGACE -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-controller"></i> Gaming World
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Úvod</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">O projektu</a></li>
+                <li class="nav-item"><a class="nav-link" href="games.html">Hry</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link active" href="news.html" aria-current="page">Novinky</a></li>
+                <li class="nav-item"><a class="nav-link" href="table.html">Tabulka</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Novinky</li>
+        </ol>
+    </nav>
+
+    <header class="mb-5">
+        <span class="badge rounded-pill text-bg-primary mb-3">GAMING WORLD</span>
+        <h1 class="display-5 fw-bold">Novinky ze světa her</h1>
+        <p class="lead">
+            Přehled herních trendů, tipů, technologií a zajímavostí
+            pro všechny fanoušky počítačových a konzolových her.
+        </p>
+    </header>
+
+    <!-- HLAVNÍ ČLÁNEK -->
+    <section class="mb-5">
+        <article class="card overflow-hidden border-0 shadow">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <img src="images/gaming-event.jpg"
+                         class="w-100 h-100"
+                         style="min-height: 280px; object-fit: cover;"
+                         alt="Herní akce a počítačové sestavy"
+                         loading="lazy">
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-body p-4 p-lg-5">
+                        <span class="badge text-bg-primary mb-3">Herní komunita</span>
+                        <h2 class="card-title">Hraní už dávno není jen koníček</h2>
+                        <p class="text-secondary small">
+                            Herní kultura a spolupráce
+                        </p>
+                        <p class="card-text">
+                            Počítačové a konzolové hry propojují hráče
+                            po celém světě. Online komunity umožňují
+                            společné hraní, sdílení zkušeností i tvorbu
+                            vlastního obsahu.
+                        </p>
+                        <a href="gallery.html" class="btn btn-primary">
+                            <i class="bi bi-images"></i> Prohlédnout galerii
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- KATEGORIE -->
+    <section class="mb-5">
+        <h2 class="mb-4">Co se děje v herním světě?</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img src="images/gaming-setup.jpg"
+                         class="card-img-top"
+                         alt="Herní počítač a monitor"
+                         loading="lazy"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-info align-self-start mb-3">Hardware</span>
+                        <h3 class="h4 card-title">Jak si sestavit herní koutek</h3>
+                        <p class="card-text">
+                            Při plánování herního místa mysli na pohodlnou
+                            židli, vhodné osvětlení, dostatek prostoru
+                            a správné umístění monitoru.
+                        </p>
+                        <a href="gallery.html" class="btn btn-outline-primary mt-auto">
+                            Inspirace v galerii
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img src="images/gaming-controller.jpg"
+                         class="card-img-top"
+                         alt="Herní ovladač"
+                         loading="lazy"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-success align-self-start mb-3">Konzole</span>
+                        <h3 class="h4 card-title">PC, nebo konzole?</h3>
+                        <p class="card-text">
+                            PC nabízí široké možnosti nastavení a upgradu.
+                            Konzole naopak často bodují jednoduchým
+                            používáním a pohodlným hraním z gauče.
+                        </p>
+                        <a href="table.html" class="btn btn-outline-primary mt-auto">
+                            Porovnat herní tituly
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img src="images/gaming-headset.jpg"
+                         class="card-img-top"
+                         alt="Herní sluchátka"
+                         loading="lazy"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-warning align-self-start mb-3">Tipy</span>
+                        <h3 class="h4 card-title">Proč nepodcenit zvuk</h3>
+                        <p class="card-text">
+                            Kvalitní zvuk pomáhá lépe vnímat herní
+                            prostředí. Při výběru sluchátek zvaž pohodlí,
+                            mikrofon a kompatibilitu s platformou.
+                        </p>
+                        <a href="contact.html" class="btn btn-outline-primary mt-auto">
+                            Sdílet svůj názor
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TIP -->
+    <section class="p-4 p-md-5 rounded-4" style="background-color: #202437;">
+        <div class="row align-items-center g-3">
+            <div class="col-lg-8">
+                <h2 class="h3">Máš vlastní herní tip?</h2>
+                <p class="mb-lg-0">
+                    Poděl se o oblíbený žánr, hru nebo zkušenosti
+                    prostřednictvím našeho herního dotazníku.
+                </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="bi bi-chat-dots"></i> Vyplnit dotazník
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="text-center py-4 mt-4">
+    <p class="mb-0">© 2026 Gaming World | Studentský projekt</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

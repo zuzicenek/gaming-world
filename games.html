@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hry | Gaming World</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-controller"></i> Gaming World
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Úvod</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">O projektu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="games.html">Hry</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Novinky</a></li>
+                <li class="nav-item"><a class="nav-link" href="table.html">Tabulka</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<main class="container py-5">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hry</li>
+        </ol>
+    </nav>
+
+    <header class="mb-5">
+        <h1><i class="bi bi-controller"></i> Herní svět</h1>
+        <p class="lead">
+            Objevuj zajímavé hry různých žánrů. Od akčních dobrodružství
+            až po strategické hry a závodní simulátory.
+        </p>
+    </header>
+
+    <section class="mb-5">
+        <h2 class="mb-4">Vybrané herní tituly</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img
+                        src="images/gaming-event.jpg"
+                        class="card-img-top"
+                        alt="Herní počítače na herní akci"
+                        loading="lazy"
+                        style="height: 210px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-primary align-self-start mb-3">Akční</span>
+                        <h3 class="card-title">Call of Duty</h3>
+                        <p class="card-text">
+                            Série akčních stříleček zaměřených na rychlou
+                            akci, týmovou spolupráci a soupeření.
+                        </p>
+                        <a href="https://www.callofduty.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary mt-auto">
+                            Oficiální web
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img
+                        src="images/gaming-console.jpg"
+                        class="card-img-top"
+                        alt="Herní konzole a ovladač"
+                        loading="lazy"
+                        style="height: 210px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-success align-self-start mb-3">Dobrodružná</span>
+                        <h3 class="card-title">Minecraft</h3>
+                        <p class="card-text">
+                            Kreativní hra, ve které můžeš stavět vlastní
+                            světy, objevovat prostředí a přežívat.
+                        </p>
+                        <a href="https://www.minecraft.net/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary mt-auto">
+                            Oficiální web
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <img
+                        src="images/gaming-setup.jpg"
+                        class="card-img-top"
+                        alt="Herní sestava a monitor"
+                        loading="lazy"
+                        style="height: 210px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-warning align-self-start mb-3">Závodní</span>
+                        <h3 class="card-title">Forza Horizon</h3>
+                        <p class="card-text">
+                            Závodní série, která kombinuje rychlá auta,
+                            otevřený svět a automobilové výzvy.
+                        </p>
+                        <a href="https://forza.net/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary mt-auto">
+                            Oficiální web
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="p-4 rounded-4" style="background-color: #1b1d2b;">
+        <h2>Jak si vybrat hru?</h2>
+        <p>
+            Při výběru zvaž žánr, herní platformu, věkové doporučení
+            a systémové požadavky. U online her je důležitá také
+            kvalita připojení a možnost hrát s přáteli.
+        </p>
+        <a href="table.html" class="btn btn-primary">
+            <i class="bi bi-table"></i> Prohlédnout herní tabulku
+        </a>
+    </section>
+
+</main>
+
+<footer class="text-center py-4 mt-4">
+    <p class="mb-0">© 2026 Gaming World | Studentský projekt</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

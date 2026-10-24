@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming World</title>
+
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- NAVIGACE -->
+    <!-- ===================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-controller"></i>
+                Gaming World
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Otevřít navigaci">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house"></i> Úvod
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-person"></i> O projektu
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">
+                            <i class="bi bi-controller"></i> Hry
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <i class="bi bi-images"></i> Galerie
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">
+                            <i class="bi bi-newspaper"></i> Novinky
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">
+                            <i class="bi bi-table"></i> Tabulka
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Kontakt
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ===================================== -->
+    <!-- HLAVNÍ OBSAH -->
+    <!-- ===================================== -->
+
+    <main>
+
+        <!-- CAROUSEL -->
+
+        <div id="gamingCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#gamingCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Snímek 1">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#gamingCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Snímek 2">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#gamingCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Snímek 3">
+                </button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img src="images/gaming-event.jpg"
+                         class="d-block w-100"
+                         alt="Herní počítače">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Svět počítačových her</h2>
+                        <p>Objevuj nové hry a herní zážitky.</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="images/gaming-console.jpg"
+                         class="d-block w-100"
+                         alt="Herní konzole">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Herní konzole</h2>
+                        <p>PlayStation, Xbox a další herní platformy.</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="images/gaming-setup.jpg"
+                         class="d-block w-100"
+                         alt="Herní vybavení">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Gaming setup</h2>
+                        <p>Inspirace pro vlastní herní koutek.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#gamingCarousel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Předchozí</span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#gamingCarousel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Další</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ÚVODNÍ OBSAH -->
+
+        <div class="container py-5">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"
+                        aria-current="page">
+                        Úvod
+                    </li>
+                </ol>
+            </nav>
+
+            <h1 class="display-5 fw-bold">
+                Vítej v Gaming World
+            </h1>
+
+            <p class="lead">
+                Gaming World je web zaměřený na svět počítačových
+                a konzolových her, herní novinky, zajímavosti
+                a herní vybavení.
+            </p>
+
+
+            <!-- KARTY -->
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+
+                            <h2 class="card-title h5">
+                                <i class="bi bi-controller"></i>
+                                Hry
+                            </h2>
+
+                            <p class="card-text">
+                                Přehled zajímavých herních titulů
+                                a různých herních žánrů.
+                            </p>
+
+                            <a href="games.html"
+                               class="btn btn-primary">
+                                Zobrazit hry
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+
+                            <h2 class="card-title h5">
+                                <i class="bi bi-images"></i>
+                                Galerie
+                            </h2>
+
+                            <p class="card-text">
+                                Herní obrázky a inspirace
+                                pro vlastní herní koutek.
+                            </p>
+
+                            <a href="gallery.html"
+                               class="btn btn-success">
+                                Otevřít galerii
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+
+                            <h2 class="card-title h5">
+                                <i class="bi bi-newspaper"></i>
+                                Novinky
+                            </h2>
+
+                            <p class="card-text">
+                                Zajímavosti a novinky ze
+                                světa počítačových her.
+                            </p>
+
+                            <a href="news.html"
+                               class="btn btn-warning">
+                                Zobrazit novinky
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ===================================== -->
+            <!-- TABS - TŘI ZÁLOŽKY -->
+            <!-- ===================================== -->
+
+            <section class="gaming-tabs mt-5"
+                     aria-labelledby="tabsHeading">
+
+                <h2 id="tabsHeading" class="mb-4">
+                    Objev svět gamingu
+                </h2>
+
+                <ul class="nav nav-tabs"
+                    id="gamingTabs"
+                    role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active"
+                                id="pc-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#pc-content"
+                                type="button"
+                                role="tab"
+                                aria-controls="pc-content"
+                                aria-selected="true">
+
+                            <i class="bi bi-pc-display"></i>
+                            PC hry
+
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"
+                                id="console-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#console-content"
+                                type="button"
+                                role="tab"
+                                aria-controls="console-content"
+                                aria-selected="false">
+
+                            <i class="bi bi-controller"></i>
+                            Konzole
+
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"
+                                id="equipment-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#equipment-content"
+                                type="button"
+                                role="tab"
+                                aria-controls="equipment-content"
+                                aria-selected="false">
+
+                            <i class="bi bi-headset"></i>
+                            Vybavení
+
+                        </button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content border border-top-0 bg-white p-4"
+                     id="gamingTabsContent">
+
+                    <div class="tab-pane fade show active"
+                         id="pc-content"
+                         role="tabpanel"
+                         aria-labelledby="pc-tab"
+                         tabindex="0">
+
+                        <h3>Hraní na počítači</h3>
+
+                        <p>
+                            Počítačové hry nabízejí široký výběr žánrů,
+                            od akčních her přes strategie až po simulátory.
+                            Výhodou PC je možnost přizpůsobit si výkon,
+                            grafiku i ovládání.
+                        </p>
+
+                        <a href="games.html"
+                           class="btn btn-primary">
+                            Prohlédnout hry
+                        </a>
+
+                    </div>
+
+                    <div class="tab-pane fade"
+                         id="console-content"
+                         role="tabpanel"
+                         aria-labelledby="console-tab"
+                         tabindex="0">
+
+                        <h3>Hraní na konzolích</h3>
+
+                        <p>
+                            Herní konzole nabízejí pohodlné hraní
+                            na televizoru a jednoduché ovládání
+                            pomocí gamepadu. Mezi známé platformy
+                            patří PlayStation, Xbox a Nintendo Switch.
+                        </p>
+
+                        <a href="about.html"
+                           class="btn btn-success">
+                            O projektu
+                        </a>
+
+                    </div>
+
+                    <div class="tab-pane fade"
+                         id="equipment-content"
+                         role="tabpanel"
+                         aria-labelledby="equipment-tab"
+                         tabindex="0">
+
+                        <h3>Herní vybavení</h3>
+
+                        <p>
+                            Ke komfortnímu hraní se hodí kvalitní
+                            klávesnice, myš, sluchátka a monitor.
+                            Vybavení vybírej podle svého rozpočtu
+                            a herních potřeb.
+                        </p>
+
+                        <a href="gallery.html"
+                           class="btn btn-warning">
+                            Inspirace v galerii
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TLAČÍTKO PRO MODAL -->
+
+            <div class="text-center mt-5">
+
+                <button type="button"
+                        class="btn btn-dark btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal">
+
+                    <i class="bi bi-info-circle"></i>
+                    Více o projektu
+
+                </button>
+
+            </div>
+
+        </div>
+        <!-- KONEC HLAVNÍHO CONTAINER -->
+
+
+        <!-- ===================================== -->
+        <!-- MODAL - PODROBNÉ INFORMACE -->
+        <!-- ===================================== -->
+
+        <div class="modal fade"
+             id="projectModal"
+             tabindex="-1"
+             aria-labelledby="projectModalLabel"
+             aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h2 class="modal-title fs-5"
+                            id="projectModalLabel">
+
+                            O projektu Gaming World
+
+                        </h2>
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Zavřít">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <p>
+                            Gaming World je studentský web
+                            zaměřený na počítačové a konzolové hry.
+                        </p>
+
+                        <p>
+                            Cílem projektu je představit herní svět,
+                            nabídnout přehled her a ukázat možnosti
+                            moderních webových technologií.
+                        </p>
+
+                        <ul>
+                            <li>Responzivní design pomocí Bootstrapu 5</li>
+                            <li>Interaktivní navigace a komponenty</li>
+                            <li>Přehled her a herního vybavení</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+
+                            Zavřít
+
+                        </button>
+
+                        <a href="about.html"
+                           class="btn btn-primary">
+
+                            O projektu
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="text-center py-4 mt-4">
+    <p class="mb-0">© 2026 Gaming World | Studentský projekt</p>
+</footer>
+
+
+    <!-- ===================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ===================================== -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
